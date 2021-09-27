@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .form_header___1ogp2 {
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 45px;
+            color: #2E99D6;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+    <title>Asset Management</title>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-body">
+            <div class="intro">
+                <span style="font-weight: bold;">Dear {RecipientFullName},</span><br /><br />
+                <span>Please be informed that the following activity has </span>
+                <span>happened on Asset Management solution for the state :</span>
+                <br /><br />
+            </div>
+            <div class="action">
+                <h2 style="color: #2E99D6">{ItemActionName}</h2>
+            </div>
+            <div class="asset-details">
+                <span style="font-weight: bold;">Details of the asset as follows:</span><br /><br />
+                <div class="asset-details-table">
+                    <table style="width:100%">
+                        <tr>
+                            <td>Asset Name</td>
+                            <td><b>{AssetName}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Product Model Number</td>
+                            <td><b>{ProductModelNumber}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Cost Price</td>
+                            <td><b>N{CostPrice}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Identification Number</td>
+                            <td><b>{IdentificationNumber}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td><b>{AssetLocation}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Purchased On</td>
+                            <td><b>{PurchasedOn}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Vendor</td>
+                            <td><b>{VendorName}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Depreciation Year</td>
+                            <td><b>{DepreciationYear}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Salvage Value</td>
+                            <td><b>N{SalvageValue}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Asset Description</td>
+                            <td><b>{AssetDescription}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Asset Tag</td>
+                            <td><b>{AssetTag}</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="asset-action-details">
+                <br /><br />
+                <div class="asset-checkout-details">
+                    <span style="font-weight: bold;">Reservation Details:</span>
+                </div>
+                <div class="asset-checkout-table-details">
+                    <table style="width:100%">
+                        <tr>
+                            <td>Reserved For</td>
+                            <td><b>{ReservedFor}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Start Date</td>
+                            <td><b>{ReservationStartDate}</b></td>
+
+                        <tr>
+                        <tr>
+                            <td>End Date</td>
+                            <td><b>{ReservationEndDate}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td><b>{ReservationLocation}</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="asset-action-initiator-details">
+                <br /><br />
+                <div class="asset-action-initiator-inner-details">
+                    <span style="font-weight: bold;">Initiator Details:</span>
+                </div>
+                <div class="asset-action-initiator-table-details">
+                    <table style="width:100%">
+                        <tr>
+                            <td>Creator's Name</td>
+                            <td><b>{InitiatorName}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Date Created</td>
+                            <td><b>{InitiatedDate}</b></td>
+
+                        <tr>
+                        <tr>
+                            <td>Location</td>
+                            <td><b>{InitiatorLocation}</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="disbursement-action-details">
+                <br /><br />
+                <div class="disbursement-action-inner-details">
+                    <span style="font-weight: bold;">Initiator Details:</span>
+                </div>
+                <div class="disbursement-action-table-details">
+                    <table style="width:100%">
+                        <tr>
+                            <td>Disbursed To</td>
+                            <td><b>{DisbursedTo}</b></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td><b>{DisbursementDate}</b></td>
+
+                        <tr>
+                        <tr>
+                            <td>Location</td>
+                            <td><b>{DisbursementLocation}</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="click-here-link">
+                <span><b>Note:</b> You can contact the administrator for details regarding this asset.</span>
+                <span><a href="{ItemURL}" style="color: #2E99D6">(Click link to view)</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
